@@ -10,7 +10,7 @@ export class StarterComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
-    //window.dispatchEvent(new Event('resize'));
+    window.dispatchEvent(new Event('resize'));
     document.body.className = 'hold-transition skin-blue sidebar-mini';
   }
 
