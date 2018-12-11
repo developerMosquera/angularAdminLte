@@ -1,0 +1,56 @@
+<app-breadcrumb [headerTitle]="title" [breadcrumbRouteActive]="breadcrumbActive" [breadcrumbOn]="breadcrumb"></app-breadcrumb>
+
+<section class="content">
+  
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Information New</h3>
+        </div>
+        <div class="panel-body">
+          <div class="panel panel-default">
+            <div class="panel-heading">Dynamic form
+              <div class="pull-right" style="cursor: pointer;" (click)="dynamicFormAdd()">
+                <i style="color: #008D4C;" class="glyphicon glyphicon-plus"></i>
+              </div>
+            </div>
+            <div class="panel-body">
+
+              <div class="panel panel-default">
+                <div class="panel-heading">Dynamic 1
+                  <div class="pull-right" style="cursor: pointer;">
+                    <i style="color: red;" class="glyphicon glyphicon-minus"></i>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+                  </div>
+
+                </div>
+              </div>              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="pull-right">
+              <button class="btn btn-success" type="submit">Save New</button>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+
+</section>

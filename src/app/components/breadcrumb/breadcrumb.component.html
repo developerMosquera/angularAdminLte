@@ -1,0 +1,12 @@
+<section class="content-header">
+  <h1>
+    {{ headerTitle }}
+  </h1>
+  <ol class="breadcrumb">
+    <li><a routerLink="/starter/dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+    <li *ngFor="let breadcrumbData of breadcrumbOn">
+        <a routerLink="/starter/{{ breadcrumbData.route }}"> {{ breadcrumbData.name }}</a>
+    </li>
+    <li class="active">{{ breadcrumbRouteActive }}</li>
+  </ol>
+</section>
